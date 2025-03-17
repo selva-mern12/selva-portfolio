@@ -1,38 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Cinzel+Decorative:wght@400;700&family=Cookie&family=Dancing+Script:wght@400;700&family=Fredericka+the+Great&family=Gloria+Hallelujah&family=Grand+Hotel&family=Indie+Flower&family=Inter:wght@400;700&family=Lobster&family=Lora:wght@400;700&family=Monoton&family=Montserrat:wght@400;700&family=Mountains+of+Christmas&family=Nunito:wght@400;700&family=Noto+Sans+Tamil:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Permanent+Marker&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Poppins:wght@400;700&family=Quicksand&family=Raleway:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Sacramento&family=Shadows+Into+Light&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Stint+Ultra+Expanded&family=Tilt+Prism&family=Work+Sans:ital,wght@0,400;0,700;1,700&family=Yesteryear&display=swap');
+
+body{
+  overflow-x: hidden;
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body::-webkit-scrollbar{
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
+  color: inherit;
 }

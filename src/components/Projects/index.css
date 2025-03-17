@@ -1,0 +1,246 @@
+.projects-container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(135deg, #007bff, #004d99);
+  scroll-margin-top: 0;
+  padding: 0;
+  scroll-margin-top: 10vh;
+  position: relative;
+}
+
+.projects-title {
+  font-size: 40px;
+  font-weight: normal;
+  font-family: Playfair Display SC;
+  color: #f0f4ff;
+  margin: 0;
+  text-shadow: -2px -2px 5px #ffffff4d, 2px 2px 5px #00000080;
+}
+
+.projects-intro {
+  font-size: 18px;
+  color: #cad6ff; 
+  text-align: center;
+  max-width: 600px;
+  text-shadow: -2px -2px 5px #ffffff4d, 2px 2px 5px #00000080;
+}
+
+.projects-horizontal {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  width: 90vw;
+  margin: 0 auto;
+}
+.projects-horizontal::-webkit-scrollbar {
+  height: 12px; 
+}
+
+.projects-horizontal::-webkit-scrollbar-track {
+  background: #00000050;
+  border-radius: 10px;
+}
+
+.projects-horizontal::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #007bff, #00bfff);
+  border-radius: 10px;
+  border: 2px solid #ffffff33; 
+}
+
+.projects-horizontal::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #00bfff, #007bff); 
+}
+.project-card {
+  width: 225px;
+  height: 477px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+  flex-shrink: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+}
+.project-card.hovered {
+  width: 850px;
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px #00000033, 0 0 20px #0000004d;
+}
+
+
+.project-preview {
+  background-color: #790e6470;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Hovered image changes */
+.project-card.hovered .project-image {
+  opacity: 0.4;
+  transform: scale(1.1);
+}
+
+/* Project Name (Collapsed) */
+.project-name {
+  position: absolute;
+  font-family: Lora;
+  top: 50%;
+  white-space: nowrap;
+  font-size: 28px;
+  color: #f0f4ff;
+  text-shadow: 2px 2px 4px #000000;
+  transition: all 0.3s ease;
+}
+
+/* Project Name (Expanded - Horizontal) */
+.project-card.hovered .project-name {
+  top: 10px;
+  left: 30px;
+  max-width: 200px;
+  font-size: 35px;
+  color: #f0f4ff; 
+  text-shadow: 3px 3px 6px #000000;
+}
+
+/* Project Details */
+.project-details {
+  position: absolute;
+  font-family: Roboto;
+  top: 0px;
+  left: 100%;
+  width: calc(100% - 225px);
+  height: 100%;
+  padding: 30px;
+  opacity: 0;
+  transition: opacity 0.5s ease, left 0.5s ease;
+  overflow-y: auto;
+  text-shadow: 0 -10px 20px #000000;
+}
+
+/* Expand Details on Hover */
+.project-card.hovered .project-details {
+  left: 25%;
+  opacity: 1;
+}
+
+.project-description {
+  font-size: 17px;
+  color: #ffffff; 
+  margin-bottom: 20px;
+}
+
+.project-tech {
+  font-size: 15px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* Features List */
+.project-features {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.project-features li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 20px;
+}
+
+/* Deployment & Status */
+.project-deployment,
+.project-status,
+.project-login {
+  color: #e0e7ff;
+  font-size:15px;
+  margin-top: 10px;
+}
+.active-status {
+  color: #7ef782;
+  font-weight: bold;
+}
+
+.inactive-status {
+  color: #ff5733;
+  font-weight: bold;
+}
+
+/* Links */
+.project-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.project-link {
+  background: rgb(81, 0, 255);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 
+    0 4px 6px rgba(0, 123, 255, 0.3),
+    0 2px 4px rgba(0, 123, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.project-repo {
+  background: #fffb07;
+  color: #4c065d;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 
+    0 4px 6px rgba(255, 193, 7, 0.3),
+    0 2px 4px rgba(255, 193, 7, 0.2);
+  transition: all 0.3s ease;
+  text-shadow: none;
+}
+
+.project-link:hover,
+.project-repo:hover {
+  transform: translateY(-3px);
+  border: #ffffff50 1px groove;
+  box-shadow: 0 4px 8px #000000b7;
+}
+
+.project-link:hover {
+  background: #007bff;
+}
+
+.project-repo:hover {
+  background: #7bff00;
+}
+.project-link:active,
+.project-repo:active{
+  scale: 0.9;
+} 
