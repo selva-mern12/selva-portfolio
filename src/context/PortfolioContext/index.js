@@ -8,7 +8,7 @@ const PortfolioContext = React.createContext({
             link: "https://quiz-game-smp.vercel.app",
             repo: "https://github.com/selva-mern12/quizGame",
             description: "An interactive quiz application for users to test their knowledge across diverse topics with real-time scoring.",
-            tech: "React.js, JavaScript, CSS",
+            tech: "React.js, JavaScript, CSS, Sqlite, Node, Express",
             features: [
                 "Multiple choice questions",
                 "Real-time scoring system",
@@ -26,7 +26,7 @@ const PortfolioContext = React.createContext({
             link: "https://job-portal-eta-five.vercel.app",
             repo: "https://github.com/selva-mern12/job_portal",
             description: "A comprehensive job search platform enabling users to browse listings, apply for positions, and manage applications.",
-            tech: "React.js, JavaScript, CSS",
+            tech: "React.js, JavaScript, CSS, Sqlite, Node, Express",
             features: [
                 "Job listing & search",
                 "Resume upload",
@@ -98,7 +98,7 @@ const PortfolioContext = React.createContext({
             link: "https://covid19dashsrp.ccbp.tech",
             repo: "https://github.com/selva-mern12/covid19-dashboard",
             description: "A data-driven dashboard providing real-time statistics and visualizations of COVID-19 trends worldwide.",
-            tech: "React.js, JavaScript, CSS, Chart.js",
+            tech: "React.js, JavaScript, CSS",
             features: [
                 "Live COVID-19 data",
                 "Interactive charts",
@@ -116,7 +116,7 @@ const PortfolioContext = React.createContext({
             link: "https://nxtwatchsrp.ccbp.tech",
             repo: "https://github.com/selva-mern12/nxt_watch",
             description: "A YouTube clone with authentication and dark mode, offering seamless video streaming and user personalization.",
-            tech: "React.js, JavaScript, CSS, JWT Authentication",
+            tech: "React.js, JavaScript, CSS",
             features: [
                 "User authentication",
                 "Dark mode support",
