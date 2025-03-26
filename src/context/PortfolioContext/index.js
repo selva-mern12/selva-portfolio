@@ -8,7 +8,7 @@ const PortfolioContext = React.createContext({
             link: "https://quiz-game-smp.vercel.app",
             repo: "https://github.com/selva-mern12/quizGame",
             description: "An interactive quiz application for users to test their knowledge across diverse topics with real-time scoring.",
-            tech: "React.js, JavaScript, CSS, Sqlite, Node, Express",
+            tech: "React.js, JavaScript, CSS, MongoDB, Node, Express",
             features: [
                 "Multiple choice questions",
                 "Real-time scoring system",
