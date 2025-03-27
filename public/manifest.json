@@ -1,21 +1,33 @@
 {
-    "short_name": "Selva",
-    "name": "Selva's Portfolio",
-    "icons": [
-      {
-        "src": "logo.png",
-        "type": "image/png",
-        "sizes": "192x192"
-      },
-      {
-        "src": "logo.png",
-        "type": "image/png",
-        "sizes": "512x512"
-      }
-    ],
-    "start_url": ".",
-    "display": "standalone",
-    "theme_color": "#000000",
-    "background_color": "#ffffff"
-  }
-  
+  "short_name": "Selva",
+  "name": "Selva's Portfolio - MERN Stack Developer",
+  "description": "A portfolio showcasing Selva's work as a MERN Stack Developer.",
+  "icons": [
+    {
+      "src": "logo-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "logo-384x384.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "logo-256x256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    }
+  ],
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "orientation": "portrait"
+}
