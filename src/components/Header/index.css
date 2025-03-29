@@ -26,21 +26,12 @@ html {
   font-weight: bold;
   font-family: Lora;
   color: #ffffff;
-  transition: transform 0.3s ease, text-shadow 0.3s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 .header-container .header-title:hover {
   transform: scale(1.05);
   text-shadow: 0 0 10px #00ff88;
-}
-.hamburger-icon {
-  display: none;
-  cursor: pointer;
-  font-size: 24px;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-.hamburger-icon:hover {
-  color: #ffdd57;
 }
 .hamburger-menu {
   display: flex;
@@ -50,7 +41,7 @@ html {
 .hamburger-menu .menu-item {
   font-size: 16px;
   cursor: pointer;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition: all 0.3s ease;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -67,19 +58,20 @@ html {
 }
 .menu-item .nav-icon {
   font-size: 20px;
-  opacity: 0;
+  display: none;
   transform: translateY(-10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: all 0.3s ease;
   position: absolute;
   top: -20px;
   color: #ffdd57;
 }
 .menu-item:hover .nav-icon {
-  opacity: 1;
+  display: block;
   transform: translateY(0);
 }
 .hamburger-menu .menu-item .menu-text {
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 16px;
 }
 .hamburger-menu .menu-item:hover .menu-text {
   color: #ffdd57;
@@ -103,7 +95,8 @@ html {
   text-shadow: 0 0 10px #d8ecffb3;
 }
 .menu-item.active-tab .nav-icon {
-  opacity: 1;
+  display: block;
+  visibility: visible;
   transform: translateY(0);
   color: #fff700; 
 }
@@ -118,9 +111,10 @@ section {
   height: 90vh;
   padding: 20px;
 }
+
 @media (max-width: 768px) {
   .header-container {
-    position: fixed;
+    justify-content: center;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -129,40 +123,78 @@ section {
   .header-container .header-title{
     font-size: 20px;
   }
-
-  .hamburger-icon {
-    display: block;
-  }
-
   .hamburger-menu {
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    position: fixed;
-    top: 10vh; /* Adjust according to header height */
-    right: -100%; /* Hide menu initially */
-    height: 90vh;
-    width: 75%;
-    padding: 25px;
-    box-shadow: -4px 0 15px rgba(0, 0, 0, 0.2);
-    transition: right 0.3s ease-in-out;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
   }
+  .hamburger-menu .menu-item{
+    width: 18vw;
+  }
+  .menu-item .menu-link .nav-icon {
+    top: 0;
+  }
+  .hamburger-menu .menu-item .menu-text{
+    font-size: 14px;
+    font-weight: normal;
+    display: none;
+  }
+  .menu-item .nav-icon{
+    display: block;
+    color: #ffffff;
+    visibility: visible;
+  }
+  .menu-item.active-tab .menu-text {
+    display: block;
+    color: #fff700;
+    text-shadow: 0 0 10px rgba(216, 236, 255, 0.7);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  .menu-item.active-tab .nav-icon {
+    opacity: 1;
+    transform: translateY(-20px);
+    color: #fff700;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 0 4px rgba(255, 247, 0, 0.7));
+  }
+  
+  .menu-item.active-tab::after {
+    width: 100%;
+    background-color: #ffdd57;
+    transition: width 0.3s ease, background-color 0.3s ease; 
+  }
+  .menu-item:not(.active-tab):hover .menu-text {
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(216, 236, 255, 0.5);
+  }
+  .menu-item:not(.active-tab):hover .nav-icon {
+    opacity: 0;
+  }
+  .menu-item:not(.active-tab):after {
+    opacity: 0;
+  }
+  .hamburger-menu{
+    gap: 10px;
+  }
+}
 
-  .hamburger-menu.active {
-    right: 0; /* Show menu when active */
-  }
-
-  .hamburger-menu .menu-item {
-    padding: 12px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  .hamburger-menu .menu-item:last-child {
-    border-bottom: none;
-  }
-
-  /* Prevent body scroll when menu is open */
-  body.menu-open {
-    overflow: hidden;
-  }
+.footer-container{
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  box-shadow: 0 -4px 15px #00000070;
+  font-size: 16px;
+  font-family: Lora;
+  font-weight: bold;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
