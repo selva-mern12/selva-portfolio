@@ -1,4 +1,5 @@
 import React from 'react';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import { Analytics } from '@vercel/analytics/react';
 import Header from './components/Header';
 import Home from './components/Home';
@@ -11,6 +12,7 @@ import './App.css'
 const App = () => {
   return (
     <div>
+      <SpeedInsights/>
       <Header />
       <Home />
       <Projects />
