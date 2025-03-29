@@ -1,4 +1,5 @@
 { 
+  "id": "/",
   "short_name": "Selva",
   "name": "Selva's Portfolio - MERN Stack Developer",
   "description": "A portfolio showcasing Selva's work as a MERN Stack Developer.",
@@ -14,6 +15,20 @@
       "sizes": "512x512"
     }
   ],
+  "screenshots": [
+    {
+      "src": "/screenshot-desktop.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshot-mobile.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ], 
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
