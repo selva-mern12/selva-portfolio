@@ -116,7 +116,7 @@ const Contact = () => {
               {errors.email && <p className="error-text">{errors.email}</p>}
             </div>
             <div className="form-group">
-              <textarea name="message" placeholder="Your Message" rows="5" value={formData.message} onChange={handleChange} required />
+              <textarea name="message" placeholder="Your Message" style={{ resize: 'none', overflow: 'auto' }} rows="5" value={formData.message} onChange={handleChange} required />
               {errors.message && <p className="error-text">{errors.message}</p>}
             </div>
             <button type="submit" className="contact-btn">Send Message</button>

@@ -3,7 +3,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #007bff, #004d99);
     scroll-margin-top: 10vh;
 }
 .overview-section::before,
@@ -75,8 +74,8 @@ strong {
 
 .irc-certificate:hover {
     transform: scale(1.05);
-    color: #0a1641; 
-    text-shadow: 1px 1px 1px #ffffff;
+    color: #e198ef; 
+    text-shadow: 1px 1px 1px #ffffff50 ;
 }
 
 

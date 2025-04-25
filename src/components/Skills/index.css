@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #007bff, #004d99);
   scroll-margin-top: 10vh;
   position: relative;
 }
@@ -149,12 +148,12 @@
 .react-icon { color: #61dafb; }
 .node-icon { color: #8cc84b; }
 .express-icon { color: #828282; }
-.python-icon { color: #3776ab; }
+.python-icon { color: #f1c40f; }
 .html-icon { color: #f16529; }
 .css-icon { color: #2965f1; }
 .js-icon { color: #f7df1e; }
 .mongodb-icon { color: #4db33d; }
-.sqlite-icon { color: #003b57; }
+.sqlite-icon { color: #fff; font-size: 55px; }
 .git-icon { color: #f34f29; }
 .github-icon { color: #ffffff; }
 .postman-icon { color: #ff6c37; }

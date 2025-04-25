@@ -9,7 +9,6 @@ body{
 body::-webkit-scrollbar{
   display: none;
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -17,4 +16,37 @@ html {
 a {
   text-decoration: none;
   color: inherit;
+}
+hr {
+  border: none;
+  height: 2px;
+  width: 100%;
+  margin: 50px auto;
+  background: linear-gradient(
+    to right,
+    transparent,
+    #d4af37,
+    #ffffff33,
+    #d4af37,
+    transparent
+  );
+  position: relative;
+  border-radius: 999px;
+  box-shadow:
+    0 0 12px rgba(212, 175, 55, 0.15),
+    0 0 6px rgba(255, 255, 255, 0.05);
+}
+hr::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: radial-gradient(circle, #ffd700, #d4af37);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow:
+    0 0 6px #ffd70088,
+    0 0 10px #d4af3755;
 }

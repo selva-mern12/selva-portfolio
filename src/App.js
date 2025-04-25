@@ -11,7 +11,7 @@ import './App.css'
 
 const App = () => {
   return (
-    <div>
+    <div style={{ background: "linear-gradient(135deg, #000000 0%, #1a1a1a 100%)"}}>
       <SpeedInsights/>
       <Header />
       <Home />

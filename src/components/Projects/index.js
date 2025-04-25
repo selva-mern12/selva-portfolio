@@ -14,7 +14,8 @@ const Projects = () => {
   }, []);
 
   return (
-    <section className="projects-container" id="projects">
+    <>
+      <section className="projects-container" id="projects">
       <div style={{textAlign: 'center'}}>
         <h1 className="projects-title">Projects</h1>
         <p className="projects-intro">Here are some of my best real-world projects.</p>
@@ -25,6 +26,8 @@ const Projects = () => {
         ))}
       </div>
     </section>
+    <hr/>
+    </>
   );
 };
 

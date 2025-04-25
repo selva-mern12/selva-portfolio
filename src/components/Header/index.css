@@ -13,13 +13,13 @@ html {
   width: 100vw;
   align-items: center;
   padding: 16px 32px;
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
-  backdrop-filter: blur(3px);
+  background-color: #0f426c70;
+  backdrop-filter: blur(5px);
   color: #ffffff;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 4px 15px #00000070;
+  box-shadow: 0 0 5px #cbcab4f9;
 }
 .header-container .header-title {
   font-size: 28px;
@@ -118,7 +118,6 @@ section {
     top: 0;
     left: 0;
     z-index: 1000;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
   }
   .header-container .header-title{
     font-size: 20px;
@@ -187,12 +186,13 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  background-color: #2b060670;
+  backdrop-filter: blur(5px);
   color: #ffffff;
   position: fixed;
   bottom: 0;
   z-index: 1000;
-  box-shadow: 0 -4px 15px #00000070;
+  box-shadow: 0 0 10px #cbcab4f9;
   font-size: 16px;
   font-family: Lora;
   font-weight: bold;
