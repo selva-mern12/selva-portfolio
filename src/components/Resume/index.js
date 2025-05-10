@@ -47,7 +47,7 @@ const Resume = () => {
           className="resume-download-btn"
           aria-label="Download Resume"
         >
-          Download Resume
+          Download Pdf
           <FaDownload className="download-icon"/>
         </a>
         {window.innerWidth >= 768 && <button

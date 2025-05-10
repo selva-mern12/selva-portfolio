@@ -3,7 +3,7 @@
     height: 90vh;
     display: flex;
     justify-content: center;
-    
+    overflow-x: hidden;
     scroll-margin-top: 10vh;
   }
   
@@ -186,7 +186,7 @@
   }
   .contact-container{
     width: 100vw;
-    overflow: auto;
+    overflow-y: auto;
   }
   .contact-title {
     font-size: 25px;

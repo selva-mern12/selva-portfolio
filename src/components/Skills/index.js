@@ -2,9 +2,8 @@ import { useRef, useEffect} from "react";
 import { 
   FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaGitAlt, FaGithub 
 } from "react-icons/fa";
-import { SiMongodb, SiExpress, SiPython, SiPostman, SiVercel, SiNetlify } from "react-icons/si";
+import { SiMongodb, SiExpress, SiPython, SiPostman, SiVercel, SiNetlify, SiSqlite } from "react-icons/si";
 import { TbBrandJavascript } from "react-icons/tb";
-import { DiSqllite } from "react-icons/di";
 import "./index.css";
 
 const skills = [
@@ -15,7 +14,7 @@ const skills = [
   { name: "Node.js", icon: <FaNodeJs className="node-icon" /> },
   { name: "Express.js", icon: <SiExpress className="express-icon" /> },
   { name: "MongoDB", icon: <SiMongodb className="mongodb-icon" /> },
-  { name: "SQLite", icon: <DiSqllite className="sqlite-icon" /> },
+  { name: "SQLite", icon: <SiSqlite className="sqlite-icon" /> },
   { name: "Python", icon: <SiPython className="python-icon" /> },
   { name: "Git", icon: <FaGitAlt className="git-icon" /> },
   { name: "GitHub", icon: <FaGithub className="github-icon" /> },

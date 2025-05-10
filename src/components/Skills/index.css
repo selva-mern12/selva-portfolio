@@ -1,6 +1,6 @@
 .skills-section {
   height: 90vh;
-  width: 100vw;
+  overflow-x: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,7 +153,7 @@
 .css-icon { color: #2965f1; }
 .js-icon { color: #f7df1e; }
 .mongodb-icon { color: #4db33d; }
-.sqlite-icon { color: #fff; font-size: 55px; }
+.sqlite-icon { color: #6DBEE8; }
 .git-icon { color: #f34f29; }
 .github-icon { color: #ffffff; }
 .postman-icon { color: #ff6c37; }

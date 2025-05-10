@@ -1,5 +1,5 @@
 .overview-section {
-    height: 90vh;
+    height: 90vh;    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +63,7 @@ strong {
     animation: slideInLeft 0.8s ease-in-out;
 }
 .irc-certificate {
-    display: inline-block; /* Ensures the transform applies correctly */
+    display: inline-block;
     text-decoration: underline;
     color: #fff;
     font-size: 20px;
@@ -358,6 +358,7 @@ strong {
 
     .overview-text.overview-highlight {
         font-size: 18px;
+        animation: none;
     }
 
     .overview-image-container {
