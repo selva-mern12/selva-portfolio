@@ -81,7 +81,7 @@ const PortfolioContext = React.createContext({
         {
             name: "InvoGen",
             category: "Business Tool",
-            link: "https://invogen-tau.vercel.app",
+            link: "https://invogen-smp.vercel.app",
             repo: "https://github.com/selva-mern12/invogen",
             description: "A streamlined invoice generation tool designed for creating professional invoices with customizable options.",
             tech: "React.js, JavaScript, CSS",
