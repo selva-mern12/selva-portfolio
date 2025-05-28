@@ -1,6 +1,6 @@
 import React from "react";
-import resumePDF from "../../assets/selva_resume.pdf";
-import resumeImg from "../../assets/selva_resume.png";
+import resumePDF from "../../assets/selva-resume.pdf";
+import resumeImg from "../../assets/selva-resume.png";
 import "./index.css";
 import { FaDownload, FaShareAlt } from "react-icons/fa";
 

@@ -1,19 +1,20 @@
 import { useRef, useEffect} from "react";
-import { 
-  FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaGitAlt, FaGithub 
-} from "react-icons/fa";
+import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaGitAlt, FaGithub } from "react-icons/fa";
 import { SiMongodb, SiExpress, SiPython, SiPostman, SiVercel, SiNetlify, SiSqlite } from "react-icons/si";
-import { TbBrandJavascript } from "react-icons/tb";
+import { DiJavascript } from "react-icons/di";
+import { TbBrandTypescript, TbBrandNextjs   } from "react-icons/tb";
 import "./index.css";
 
 const skills = [
   { name: "HTML5", icon: <FaHtml5 className="html-icon" /> },
   { name: "CSS3", icon: <FaCss3Alt className="css-icon" /> },
-  { name: "JavaScript", icon: <TbBrandJavascript className="js-icon" /> },
+  { name: "JavaScript", icon: <DiJavascript className="js-icon" /> },
   { name: "React.js", icon: <FaReact className="react-icon" /> },
   { name: "Node.js", icon: <FaNodeJs className="node-icon" /> },
   { name: "Express.js", icon: <SiExpress className="express-icon" /> },
   { name: "MongoDB", icon: <SiMongodb className="mongodb-icon" /> },
+  { name: "TypeScript", icon: <TbBrandTypescript className="ts-icon" /> },
+  { name: "Next Js", icon: <TbBrandNextjs className="nextjs-icon" /> },
   { name: "SQLite", icon: <SiSqlite className="sqlite-icon" /> },
   { name: "Python", icon: <SiPython className="python-icon" /> },
   { name: "Git", icon: <FaGitAlt className="git-icon" /> },

@@ -17,8 +17,28 @@ const PortfolioContext = React.createContext({
             deployment: "Vercel",
             status: "Active",
             login: true,
+            credentials: "Username: selva1201, Password: selva@MERN1201 (or Try your Self)",
             smImage: require('../../assets/SmImages/quiz.jpg'),
             lgImage: require('../../assets/LgImages/quiz.png'),
+        },
+        {
+            name: "covid19Dash",
+            category: "Dashboard",
+            link: "https://covid19dashsrp.ccbp.tech",
+            repo: "https://github.com/selva-mern12/covid19-dashboard",
+            description: "A data-driven dashboard providing real-time statistics and visualizations of COVID-19 trends worldwide.",
+            tech: "React.js, JavaScript, CSS",
+            features: [
+                "Live COVID-19 data",
+                "Interactive charts",
+                "Country-wise reports"
+            ],
+            deployment: "CCBP",
+            status: "Active",
+            login: false,
+            credentials: "",
+            smImage: require('../../assets/SmImages/covid19.jpg'),
+            lgImage: require('../../assets/LgImages/covid19.png'),
         },
         {
             name: "Job Portal",
@@ -35,8 +55,28 @@ const PortfolioContext = React.createContext({
             deployment: "Vercel",
             status: "Active",
             login: true,
+            credentials: "Email: selva.mern12@gmail.com, Password: selva@1201(or Try your Self)",
             smImage: require('../../assets/SmImages/jobstation.jpg'),
             lgImage: require('../../assets/LgImages/jobstation.png'),
+        },        
+        {
+            name: "Elegance",
+            category: "E-commerce",
+            link: "https://elegance-smp.vercel.app",
+            repo: "https://github.com/selva-mern12/ecom-ui",
+            description: "Modern e-commerce UI with product browsing, cart, and state persistence using React.js and Fake Store API.",
+            tech: "React.js, JavaScript, CSS",
+            features: [
+                "Persistent Cart – Items in the cart stay saved even if you close the browser.",
+                "Mini Cart – Click the cart icon to quickly see your items and total price.",
+                "Responsive Design – Works smoothly on mobile, tablet, and desktop screens."
+            ],
+            deployment: "Vercel",
+            status: "Active",
+            login: false,
+            credentials: "",
+            smImage: require('../../assets/SmImages/elegance.jpg'),
+            lgImage: require('../../assets/LgImages/elegance.png'),
         },
         {
             name: "InvoGen",
@@ -53,6 +93,7 @@ const PortfolioContext = React.createContext({
             deployment: "Vercel",
             status: "Active",
             login: true,
+            credentials: "Username: selva1201, Password: selva@MERN1201 (or Try your Self)",
             smImage: require('../../assets/SmImages/invogen.jpg'),
             lgImage: require('../../assets/LgImages/invogen.png'),
         },
@@ -71,6 +112,7 @@ const PortfolioContext = React.createContext({
             deployment: "Netlify",
             status: "Active",
             login: false,
+            credentials: "",
             smImage: require('../../assets/SmImages/meteosyn.jpg'),
             lgImage: require('../../assets/LgImages/meteosyn.png'),
         },
@@ -89,26 +131,9 @@ const PortfolioContext = React.createContext({
             deployment: "CCBP",
             status: "Active",
             login: true,
+            credentials: "Username: rahul, Password: rahul@2021",
             smImage: require('../../assets/SmImages/nxttrendz.jpg'),
             lgImage: require('../../assets/LgImages/nxttrendz.png'),
-        },
-        {
-            name: "covid19Dash",
-            category: "Dashboard",
-            link: "https://covid19dashsrp.ccbp.tech",
-            repo: "https://github.com/selva-mern12/covid19-dashboard",
-            description: "A data-driven dashboard providing real-time statistics and visualizations of COVID-19 trends worldwide.",
-            tech: "React.js, JavaScript, CSS",
-            features: [
-                "Live COVID-19 data",
-                "Interactive charts",
-                "Country-wise reports"
-            ],
-            deployment: "CCBP",
-            status: "Active",
-            login: false,
-            smImage: require('../../assets/SmImages/covid19.jpg'),
-            lgImage: require('../../assets/LgImages/covid19.png'),
         },
         {
             name: "NxtWatch",
@@ -125,6 +150,7 @@ const PortfolioContext = React.createContext({
             deployment: "CCBP",
             status: "Active",
             login: true,
+            credentials: "Username: rahul, Password: rahul@2021",
             smImage: require('../../assets/SmImages/nxtwatch.jpg'),
             lgImage: require('../../assets/LgImages/nxtwatch.png'),
         },
@@ -143,11 +169,10 @@ const PortfolioContext = React.createContext({
             deployment: "Vercel",
             status: "Active",
             login: false,
+            credentials: "",
             smImage: require('../../assets/SmImages/moviedb.png'),
             lgImage: require('../../assets/LgImages/moviesdb.png'),
           }
-          
-          
     ]
 });
 

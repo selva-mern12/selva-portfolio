@@ -60,12 +60,16 @@ const Overview = () => {
           </p>
 
           <p className="overview-text">
+            I also have <strong>basic knowledge of TypeScript and Next.js</strong>, and I’m currently exploring these technologies to enhance my ability to build modern, high-performance applications.
+          </p>
+
+          <p className="overview-text">
             I’m a firm believer in <strong>continuous learning</strong> and always stay updated with the latest
             industry trends and technologies to build clean, modern, and effective solutions.
           </p>
 
           <p className="overview-text overview-highlight">
-            🚀 I’m excited to share my journey—explore my work, and let’s build something amazing together!
+            I'm glad you're here—take a look at my projects, and feel free to connect. Let's create something impactful together!
           </p>
         </div>
         

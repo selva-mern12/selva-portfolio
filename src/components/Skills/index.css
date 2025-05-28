@@ -1,9 +1,11 @@
 .skills-section {
   height: 90vh;
-  overflow-x: hidden;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  scroll-margin-top: 0;
+  padding: 0;
   scroll-margin-top: 10vh;
   position: relative;
 }
@@ -144,6 +146,8 @@
 .animate-skills .skill-card:nth-child(12) { animation-delay: 1.2s; }
 .animate-skills .skill-card:nth-child(13) { animation-delay: 1.3s; }
 .animate-skills .skill-card:nth-child(14) { animation-delay: 1.4s; }
+.animate-skills .skill-card:nth-child(15) { animation-delay: 1.5s; }
+.animate-skills .skill-card:nth-child(16) { animation-delay: 1.6s; }
 
 .react-icon { color: #61dafb; }
 .node-icon { color: #8cc84b; }
@@ -159,33 +163,41 @@
 .postman-icon { color: #ff6c37; }
 .netlify-icon { color: #00c7b7; }
 .vercel-icon { color: #ffffff; }
+.ts-icon { color: #3178c6; }
+.nextjs-icon { color: #00d8ff ; }  
 
 @media (max-width: 768px) {
-  
+  .skills-section {
+    scroll-margin-top: 5vh;
+  }
   .skills-title {
     font-size: 20px;
     margin-bottom: 20px;
   }
-  
   .skills-container {
     width: 100vw;
     margin: auto;
-    padding: 0 20px;
+    padding: 0 0px;
     text-align: center;
-
   }
-  
   .skills-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 20px;
+    padding: 20px 2px;
     justify-content: center;
-    height: 80vh;
+    height: 70vh;
     overflow: auto;
   }
   .skill-card {
     width: 100px;
     height: 100px;
+    background-color: transparent;
+    box-shadow: 
+      4px 4px 8px rgba(0, 0, 0, 0.5),
+      -4px -4px 8px rgba(255, 255, 255, 0.1),
+      inset 4px 4px 8px rgba(0, 0, 0, 0.3),
+      inset -4px -4px 8px rgba(255, 255, 255, 0.1); 
   }
   .skill-icon {
     font-size: 25px;

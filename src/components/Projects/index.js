@@ -37,7 +37,9 @@ const ProjectCard = ({ project, isMobile, isLast }) => {
   return (
     <div
       className={`project-card ${isHovered ? "hovered" : ""} ${isLast ? "last-project" : ""}`}
-      style={{backgroundImage: `url(${isHovered ? project.lgImage : project.smImage})`}}
+      style={{
+        backgroundImage: `linear-gradient(135deg, #00000001, #000), url(${isHovered ? project.lgImage : project.smImage})`
+      }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -60,6 +62,11 @@ const ProjectCard = ({ project, isMobile, isLast }) => {
         </p>
 
         {project.login && <p className="project-login">🔑 Login Required</p>}
+        {project.credentials && (
+          <p className="project-credentials">
+            <strong>Credentials:</strong> {project.credentials}
+          </p>
+        )}
 
         <div className="project-links">
           <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">🔗 View Live</a>

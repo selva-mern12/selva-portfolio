@@ -81,16 +81,13 @@ strong {
 
 .overview-text {
     font-size: 18px;
-    line-height: 1.7;
-    font-weight: 500;
+    line-height: 1.5;
     margin-bottom: 15px;
-    opacity: 0.9;
-    animation: fadeIn 1.2s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
 }
 .overview-text.overview-highlight {
-    font-size: 22.4px;
-    font-weight: 600;
-    color: #ffcc00;
+    font-size: 20px;
+    color: #00BFFF;
     animation: pulse 2s infinite;
 }
 .overview-image-container {
@@ -279,7 +276,7 @@ strong {
 @keyframes fadeIn {
     from {
         opacity: 0;
-    }    to {
+    } to {
         opacity: 1;
     }
 }
@@ -287,7 +284,7 @@ strong {
     from {
         opacity: 0;
         transform: translateX(-20px);
-    }    to {
+    }to {
         opacity: 1;
         transform: translateX(0);
     }
@@ -296,7 +293,7 @@ strong {
     from {
         opacity: 0;
         transform: translateX(20px);
-    }    to {
+    }to {
         opacity: 1;
         transform: translateX(0);
     }
@@ -305,7 +302,7 @@ strong {
     from {
         opacity: 0;
         transform: translateY(20px);
-    }    to {
+    }to {
         opacity: 1;
         transform: translateY(0);
     }
@@ -314,17 +311,17 @@ strong {
     from {
         opacity: 0;
         transform: translateX(-50px);
-    }    to {
+    }to {
         opacity: 1;
         transform: translateX(0);
     }
 }
 @keyframes pulse {
-    0% {
+    0%{
         transform: scale(1);
-    }    50% {
-        transform: scale(1.05);
-    }    100% {
+    }50% {
+        transform: scale(1.03);
+    }100% {
         transform: scale(1);
     }
 }
